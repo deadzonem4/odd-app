@@ -4,8 +4,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "ajv": "^6.5.3",
     "bootstrap": "^4.1.1",
-    "gh-pages": "^2.0.0",
+    "jquery": "^1.9.1",
     "react": "^16.5.0",
     "react-browser-router": "^2.1.2",
     "react-dom": "^16.5.0",
@@ -21,5 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.0"
   }
 }
