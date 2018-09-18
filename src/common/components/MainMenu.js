@@ -41,16 +41,16 @@ class MainMenu extends React.Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <Link className="nav-link" to="odd-app">Home</Link>
+                  <Link className="nav-link" to="/odd-app">Home</Link>
                 </NavItem>
                 <NavItem>
-                  <Link className="nav-link" to="odd-app">Menu</Link>
+                  <Link className="nav-link" to="/odd-app">Menu</Link>
                 </NavItem>
                 <NavItem>
-                  <Link className="nav-link" to="odd-app">Menu</Link>
+                  <Link className="nav-link" to="/odd-app">Menu</Link>
                 </NavItem>
                 <NavItem>
-                  <Link className="nav-link" to="odd-app">Menu</Link>
+                  <Link className="nav-link" to="/odd-app">Menu</Link>
                 </NavItem>
                 <NavItem>
                   <NavLink target="_blank" href="http://rosen-georgiev.co.nf/">Contact</NavLink>
