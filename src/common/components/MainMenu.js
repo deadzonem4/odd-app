@@ -34,23 +34,23 @@ class MainMenu extends React.Component {
       <div>
         <Navbar color="custom-header" expand="md"  style={{...styles.fill}}>
           <div className="container">
-            <Link className="navbar-brand" to="/">
+            <Link className="navbar-brand" to="odd-app">
               <p>Logo</p>
             </Link>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <Link className="nav-link" to="/">Home</Link>
+                  <Link className="nav-link" to="odd-app">Home</Link>
                 </NavItem>
                 <NavItem>
-                  <Link className="nav-link" to="/">Menu</Link>
+                  <Link className="nav-link" to="odd-app">Menu</Link>
                 </NavItem>
                 <NavItem>
-                  <Link className="nav-link" to="/">Menu</Link>
+                  <Link className="nav-link" to="odd-app">Menu</Link>
                 </NavItem>
                 <NavItem>
-                  <Link className="nav-link" to="/">Menu</Link>
+                  <Link className="nav-link" to="odd-app">Menu</Link>
                 </NavItem>
                 <NavItem>
                   <NavLink target="_blank" href="http://rosen-georgiev.co.nf/">Contact</NavLink>

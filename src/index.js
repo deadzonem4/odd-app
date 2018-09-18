@@ -18,7 +18,7 @@ class App extends Component {
         <div>
           <Header/>
           <Switch>
-            <Route exact path="/" component={HomePage} />
+            <Route exact path="odd-app" component={HomePage} />
             <Route  component={ErrorPage} />
           </Switch>
           <Footer text="All rights reserved. Design & development Rosen Georgiev"/>
