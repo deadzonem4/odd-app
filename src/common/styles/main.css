@@ -1,0 +1,218 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a:hover{
+	text-decoration: none;
+}
+header{
+	background-color: #23345c;
+	box-shadow: 0px 2px 11px 1px rgba(0, 0, 0, 0.31);
+	border-bottom: solid 1px #98a3b7;
+}
+.navbar{
+	padding: 0;
+}
+.nav-link{
+	color: #FFF;
+	font-size: 18px;
+	padding-top: 25px;
+  padding-bottom: 25px;
+  transition: .2s ease-in-out;
+}
+.nav-link:hover{
+	background-color: #98a3b7;
+	color: #07143e;
+}
+.navbar-brand, .navbar-brand:hover, .navbar-brand:focus{
+	color: #fff;
+	font-size: 26px;
+}
+.navbar-brand p{
+	margin: 0;
+}
+.nav-item{
+	padding: 0 4px;
+}
+#content{
+	background-color: #1b2850;
+}
+.category-sidebar, .events-result{
+	margin: 20px 0 52px;
+	background-color: rgb(15, 30, 70);
+	min-height: 80vh;
+	padding-bottom: 20px;
+}
+.event-title{
+	background-color: #f7941d;
+	padding: 10px;
+}
+.category-title{
+	background-color: #f7941d;
+	padding: 15px 10px;
+	margin-bottom: 0;
+	color: #07143e;
+}
+.category-item{
+	font-size: 17px;
+	margin-bottom: 2px;
+	padding: 12px 10px 12px 20px;
+	background-color: #23345c;
+	transition: .2s ease-in-out;
+}
+.category-item a{
+	color: #fff;
+	display: block;
+}
+.category-item:hover{
+	background-color: rgba(80, 91, 125, 0.22);
+}
+.categories{
+	padding: 0;
+	margin: 0;
+}
+.filters{
+	padding: 10px 20px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.filter-item{
+	color: #f7941d;
+	font-size: 19px;
+	width: 25%;
+}
+.filter-item:last-of-type{
+	width: 35%;
+}
+.filter-item:nth-of-type(1){
+	text-align: left;
+	width: 40%;
+}
+.filter-item a, .filter-item a:hover, .filter-item a:focus{
+	color: #f7941d;
+}
+.bet-content{
+	padding: 0;
+	margin: 0;
+}
+.event-item{
+	padding: 8px 20px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-color: #23345c;
+  margin-bottom: 3px;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+.event-item:hover{
+	background-color: rgba(80, 91, 125, 0.22);
+}
+#current-result{
+	color: #f7941d;
+}
+.bet-info{
+	display: flex;
+	justify-content: space-between;
+	width: 40%;
+}
+.home-away-coeficent{
+	display: flex;
+	justify-content: space-around;
+	width: 25%;
+}
+#current-result, #match{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#match{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+#current-result{
+	font-size: 18px;
+}
+.home-away-coeficent li{
+	padding: 3px 6px;
+	background-color: #98a3b7;
+	margin: 0 2px;
+	min-width: 51px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-away-coeficent .home{
+	order: 0;
+}
+.home-away-coeficent .even{
+	order: 2;
+}
+.home-away-coeficent .away{
+	order: 3;
+}
+.home-away-coeficent .even.missed{
+ order: 1;
+}
+footer{
+	background-color: #23345c;
+	padding: 10px;
+	color: #fff;
+	text-align: center;
+}
+.all-rights{
+	font-size: 14px;
+	margin: 0;
+}
+.filter-item .dropdown-item{
+	color: #fff;
+	transition: .2s ease-in-out;
+}
+.filter-item .dropdown-menu{
+	background-color: #0d1b41;
+}
+.filter-item .dropdown-item:hover{
+	color: #000;
+	background-color: #afb3c3;
+}
+.event-item span{
+	color: #07143e;
+}
+.bet-info span{
+	color: #fff;
+	width: 100%;
+}
+.bookmaker{
+	text-align: center;
+	width: 35%;
+}
+.event-item .bookmaker-name{
+	color: #FFF;
+}
+@media only screen and (max-width: 1199px) {
+  .home-away-coeficent, .bookmaker, .filter-item, .filter-item:last-of-type{
+  	width: 30%;
+  }
+}
+@media only screen and (max-width: 991px) {
+	.filter-item{
+		font-size: 17px;
+	}
+  .event-title{
+  	font-size: 1.4rem;
+  }
+  .category-title{
+  	padding: 10px;
+  	font-size: 1.4rem;
+  }
+}
+
