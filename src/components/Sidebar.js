@@ -7,7 +7,7 @@ const Sidebar = (props) => {
     <div className={"col-md-" + props.col}>
       <div className="category-sidebar">
         <h4 className="category-title">{props.title}</h4>
-        <SidebarMenu/>
+        <SidebarMenu api={props.api}/>
       </div>
     </div>
   );

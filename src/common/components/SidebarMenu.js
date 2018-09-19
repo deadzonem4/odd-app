@@ -1,19 +1,31 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const SidebarMenu = (props) => {
+  const items = props.api.map((filters) =>{
+    return(filters.sport_nice);
+    
+  });
 
-    return (
-      <ul className="categories">
-        <li className="category-item"><Link to="/odd-app">Soccer</Link></li>
-        <li className="category-item"><Link to="/odd-app">Soccer</Link></li>
-        <li className="category-item"><Link to="/odd-app">Soccer</Link></li>
-        <li className="category-item"><Link to="/odd-app">Soccer</Link></li>
-        <li className="category-item"><Link to="/odd-app">Soccer</Link></li>
-        <li className="category-item"><Link to="/odd-app">Soccer</Link></li>
-        <li className="category-item"><Link to="/odd-app">Soccer</Link></li>
-      </ul>
-    );
+  const unique = [...new Set(items)];
+  const sorted = unique.sort() 
+
+  const categories = sorted.map((results) =>{
+    
+    return(<li key={results} className="category-item">{results}</li>);
+    
+  });
+
+  return (
+    <ul className="categories">
+      {categories}
+    </ul>
+  );
 }
 export default SidebarMenu;
+
+
+
+    
+
+
 

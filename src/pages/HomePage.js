@@ -46,7 +46,11 @@ class HomePage extends React.Component {
       <main id="content">
         <div className="container">
           <div className="row">
-            <Sidebar col="3" title="Top Events"/>
+            <Sidebar 
+              col="3"
+              title="Top Events"
+              api={this.state.api}
+            />
             <OddsBox 
               col="9" 
               title="Upcoming events"

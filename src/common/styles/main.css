@@ -63,10 +63,8 @@ header{
 	padding: 12px 10px 12px 20px;
 	background-color: #23345c;
 	transition: .2s ease-in-out;
-}
-.category-item a{
 	color: #fff;
-	display: block;
+	cursor: pointer;
 }
 .category-item:hover{
 	background-color: rgba(80, 91, 125, 0.22);
