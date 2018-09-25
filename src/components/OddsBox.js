@@ -29,7 +29,7 @@ class OddsBox extends React.Component {
 	              <li className="filter-item">1x2</li>
 	              <li className="filter-item">Bookmakers</li>
 	            </ul>
-	            <EventItem api={this.props.api}/>
+	            	<EventItem api={this.props.api}/>
 	          </div>
 	        </div>
 	      </div>

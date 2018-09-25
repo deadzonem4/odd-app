@@ -2,7 +2,7 @@ import React from 'react';
 import OddsBox from '../components/OddsBox';
 import Sidebar from '../components/Sidebar';
 
-const url = 'https://api.the-odds-api.com/v3/odds/?sport=UPCOMING&region=uk&apiKey=ea3bbb0618e07a324ba827434bfaf39f';
+const url = 'https://api.the-odds-api.com/v3/odds/?sport=UPCOMING&region=uk&apiKey=ad861170ddf643485f860929c4cfab22';
 
 class HomePage extends React.Component {
 
@@ -14,7 +14,7 @@ class HomePage extends React.Component {
       homeTeam : '',
       awayTeam : '',
       mydata: '',
-      api: ''
+      api: '',
     };
   }
   componentDidMount(){
@@ -30,6 +30,7 @@ class HomePage extends React.Component {
           api: api.data,
           loading: false
         });
+        console.log(this.state.api)
       })
       .catch(error => {
         this.setState({ 

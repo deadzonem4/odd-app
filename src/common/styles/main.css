@@ -161,6 +161,9 @@ header{
 .home-away-coeficent .even.missed{
  order: 1;
 }
+.event-item-disabled{
+	display: none;
+}
 footer{
 	background-color: #23345c;
 	padding: 10px;
@@ -195,6 +198,14 @@ footer{
 }
 .event-item .bookmaker-name{
 	color: #FFF;
+}
+.additional-info{
+	padding: 12px 20px;
+}
+.info-content{
+	color: #fff;
+	font-size: 16px;
+	margin: 0;
 }
 @media only screen and (max-width: 1199px) {
   .home-away-coeficent, .bookmaker, .filter-item, .filter-item:last-of-type{
