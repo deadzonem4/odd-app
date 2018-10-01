@@ -5,24 +5,29 @@ class EventItem extends React.Component {
   constructor(props) {
     super(props);
 
-    this.Test = this.Test.bind(this);
+
 
     this.state = {
-      test: false
+      test: this.props.api
     };
     
   }
-  Test() {
+  Test = (index, e) => {
+    
+    const addInfo =  [...this.props.api];
+    const koko = addInfo[index].sport_nice = " ";
     this.setState({
-      test: !this.state.test
+      test: koko
     });
-    console.log("here")
+         console.log(this.state.test)
+
   }
 
   render() {
-    const items = this.props.api.map((filters) =>
+
+    const items = this.props.api.map((filters, index) =>
       <div key={filters.home_team}>
-        <div  className={filters.sites_count === 0 ? 'event-item-disabled' : 'event-item'} onClick={this.Test}>
+        <div className={filters.sites_count === 0 ? 'event-item-disabled' : 'event-item'} onClick={this.Test.bind(this, index)}>
           <ul className="bet-info">
             <li id="match">
               <span>{filters.home_team}</span>
@@ -42,6 +47,7 @@ class EventItem extends React.Component {
             </li>
           </ul>
         </div>
+
       </div>
     );
 

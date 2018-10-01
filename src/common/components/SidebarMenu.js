@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SidebarMenu = (props) => {
-  
+
   const items = props.api.map((filters) =>{
     return(filters.sport_nice);
     
@@ -11,7 +11,7 @@ const SidebarMenu = (props) => {
   const sorted = unique.sort() 
 
   const categories = sorted.map((results) =>{
-    
+
     return(<li key={results} className="category-item">{results}</li>);
     
   });
