@@ -4,7 +4,7 @@ import "../../node_modules/slick-carousel/slick/slick.css";
 import "../../node_modules/slick-carousel/slick/slick-theme.css";
 import '../common/styles/main.css';
 
-//try push
+
 class Test extends React.Component {
   render() {
     var settings = {
