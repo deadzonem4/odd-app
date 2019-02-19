@@ -44,7 +44,7 @@ class MainMenu extends React.Component {
                   <Link className="nav-link" to="/odd-app">Home</Link>
                 </NavItem>
                 <NavItem>
-                  <Link className="nav-link" to="/odd-app">Menu</Link>
+                  <Link className="nav-link" to="/test">Test</Link>
                 </NavItem>
                 <NavItem>
                   <Link className="nav-link" to="/odd-app">Menu</Link>

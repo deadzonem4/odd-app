@@ -4,6 +4,7 @@ import registerServiceWorker from './registerServiceWorker';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
+import Test from './pages/Test';
 import ErrorPage from './pages/ErrorPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -19,6 +20,7 @@ class App extends Component {
           <Header/>
           <Switch>
             <Route exact path="/odd-app" component={HomePage} />
+            <Route exact path="/test" component={Test} />
             <Route  component={ErrorPage} />
           </Switch>
           <Footer text="All rights reserved. Design & development Rosen Georgiev"/>
