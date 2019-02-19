@@ -9,17 +9,17 @@ class Test extends React.Component {
   render() {
     var settings = {
       centerMode: true,
-      draggable:false,
+      draggable:true,
       slidesToShow:1,
       infinite:true,
       slidesToScrol1: 1,
       autoplay: true,
-      autoplaySpeed: 1000, 
+      autoplaySpeed: 100, 
       arrows:false,
-      speed:5000,
+      speed:4500,
       easing:'linear',
       variableWidth:true,
-      pauseOnHover:true,
+      pauseOnHover:false,
       slide: '.slider .group',
       swipeToSlide:true,
     };
