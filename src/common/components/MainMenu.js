@@ -6,7 +6,6 @@ import {
   NavbarToggler,
   Nav,
   NavItem,
-  NavLink
   } from 'reactstrap';
 
 const styles = {};
@@ -51,9 +50,6 @@ class MainMenu extends React.Component {
                 </NavItem>
                 <NavItem>
                   <Link className="nav-link" to="/odd-app">Menu</Link>
-                </NavItem>
-                <NavItem>
-                  <NavLink target="_blank" href="http://rosen-georgiev.co.nf/">Contact</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>

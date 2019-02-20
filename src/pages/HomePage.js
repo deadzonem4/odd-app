@@ -30,7 +30,6 @@ class HomePage extends React.Component {
           api: api.data,
           loading: false
         });
-        console.log(this.state.api)
       })
       .catch(error => {
         this.setState({ 
