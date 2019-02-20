@@ -4,16 +4,18 @@ import "../../node_modules/slick-carousel/slick/slick.css";
 import "../../node_modules/slick-carousel/slick/slick-theme.css";
 import '../common/styles/main.css';
 
-const animation = {};
-
-animation.fill = {
-  background: '#23345c',
-  boxShadow: '0px 2px 11px 1px rgba(0, 0, 0, 0.31)',
-  borderBottom: 'solid 1px #98a3b7'
-};
-
 
 class Test extends React.Component {
+componentDidMount() {
+    window.addEventListener("resize", this.resize.bind(this));
+    this.resize();
+}
+
+resize() {
+    if (window.innerWidth <= 760) {
+        document.location = 'https://affiliate.winbet-bg.com/#/'
+    }
+}
   render() {
     var settings = {
       centerMode: true,

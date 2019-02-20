@@ -243,6 +243,7 @@ footer{
 	margin-bottom: 0;
 }
 .slide{
+	cursor: pointer;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -282,36 +283,33 @@ footer{
 }
 @keyframes pulse {
   0%{
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
   10%{
-      -webkit-transform: scale3d(1.18, 1.18, 1.18);
-      transform: scale3d(1.18, 1.18, 1.18);
+    -webkit-transform: scale3d(1.18, 1.18, 1.18);
+    transform: scale3d(1.18, 1.18, 1.18);
   }
   20%{
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
-
 }
-
 @-webkit-keyframes pulse {
   0%{
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
   10%{
-      -webkit-transform: scale3d(1.18, 1.18, 1.18);
-      transform: scale3d(1.18, 1.18, 1.18);
+    -webkit-transform: scale3d(1.18, 1.18, 1.18);
+    transform: scale3d(1.18, 1.18, 1.18);
   }
   20%{
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
-
 }
 .promo{
-		-webkit-animation: pulse 2.5s ease-in-out infinite both;
-	        animation: pulse 2.5s ease-in-out infinite both;
+	-webkit-animation: pulse 2.5s ease-in-out infinite both;
+  animation: pulse 2.5s ease-in-out infinite both;
 }
