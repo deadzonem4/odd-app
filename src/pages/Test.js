@@ -4,12 +4,17 @@ import "../../node_modules/slick-carousel/slick/slick.css";
 import "../../node_modules/slick-carousel/slick/slick-theme.css";
 import '../common/styles/main.css';
 
+const userLang = navigator.language || navigator.userLanguage; 
 
 class Test extends React.Component {
-componentDidMount() {
-    window.addEventListener("resize", this.resize.bind(this));
-    this.resize();
-}
+  componentWillMount(){
+
+console.log("The language is: " + userLang);
+  }
+  componentDidMount() {
+      window.addEventListener("resize", this.resize.bind(this));
+      this.resize();
+  }
 
 resize() {
     if (window.innerWidth <= 760) {
