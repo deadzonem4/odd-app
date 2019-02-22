@@ -6,21 +6,40 @@ import '../common/styles/main.css';
 
 const userLang = navigator.language || navigator.userLanguage; 
 
+const one = "12 000BGN";
+const two = "15 000BGN";
+const three = "18 000BGN";
+const four = "22 000BGN";
+const five = "28 000BGN";
+const six = "50 000BGN";
+const seven = "54 000BGN";
+
+var values = [];
+var newVals = [];
+values.push(one, two, three, four, five, six, seven)
+
+for( var i=0; i<values.length;i++){
+  values[i] = parseInt(values[i], 10);
+  newVals.push(values[i]);
+}
+
+console.log(newVals);
+
 class Test extends React.Component {
   componentWillMount(){
-
-console.log("The language is: " + userLang);
+    console.log("The language is: " + userLang);
   }
+
   componentDidMount() {
-      window.addEventListener("resize", this.resize.bind(this));
-      this.resize();
+    window.addEventListener("resize", this.resize.bind(this));
+
   }
 
-resize() {
+  resize() {
     if (window.innerWidth <= 760) {
-        document.location = 'https://affiliate.winbet-bg.com/#/'
+      document.location = 'https://affiliate.winbet-bg.com/#/'
     }
-}
+  }
   render() {
     var settings = {
       centerMode: true,
@@ -29,13 +48,12 @@ resize() {
       infinite:true,
       slidesToScrol1: 1,
       autoplay: true,
-      autoplaySpeed: 3500, 
+      autoplaySpeed: 3000, 
       arrows:false,
       speed:1200,
       easing:'linear',
       variableWidth:true,
       pauseOnHover:false,
-      slide: '.slider .group',
       swipeToSlide:true,
     };
     return (
@@ -48,41 +66,53 @@ resize() {
       <div className="main-slider">
         <Slider {...settings} className="full-width-slider">
           <div className="slide">
-            <div className="promo">
+            <div className="">
               <span>12.04.2018</span>
-              <h4>12 000BGN</h4>
+              <h4>{one}</h4>
               <p>winbet sofia, maldost</p>
             </div>
           </div>
           <div className="slide">
-            <span>14.04.2018</span>
-            <h4>15 000BGN</h4>
-            <p>winbet sofia, maldost</p>
+            <div className="promo">
+              <span>12.04.2018</span>
+              <h4>{two}</h4>
+              <p>winbet sofia, maldost</p>
+            </div>
+          </div>
+           <div className="slide">
+            <div className="">
+              <span>12.04.2018</span>
+              <h4>{three}</h4>
+              <p>winbet sofia, maldost</p>
+            </div>
+          </div>
+            <div className="slide">
+            <div className="">
+              <span>12.04.2018</span>
+              <h4>{one}</h4>
+              <p>winbet sofia, maldost</p>
+            </div>
           </div>
           <div className="slide">
-            <span>10.04.2018</span>
-            <h4>10 000BGN</h4>
-            <p>winbet sofia, maldost</p>
+            <div className="">
+              <span>12.04.2018</span>
+              <h4>{one}</h4>
+              <p>winbet sofia, maldost</p>
+            </div>
           </div>
           <div className="slide">
-            <span>19.04.2018</span>
-            <h4>18 000BGN</h4>
-            <p>winbet sofia, maldost</p>
+            <div className="">
+              <span>12.04.2018</span>
+              <h4>{one}</h4>
+              <p>winbet sofia, maldost</p>
+            </div>
           </div>
           <div className="slide">
-            <span>29.04.2018</span>
-            <h4>29 000BGN</h4>
-            <p>winbet sofia, maldost</p>
-          </div>
-          <div className="slide">
-            <span>09.04.2018</span>
-            <h4>40 000BGN</h4>
-            <p>winbet sofia, maldost</p>
-          </div>
-          <div className="slide">
-            <span>01.04.2018</span>
-            <h4>28 000BGN</h4>
-            <p>winbet sofia, maldost</p>
+            <div className="">
+              <span>12.04.2018</span>
+              <h4>{one}</h4>
+              <p>winbet sofia, maldost</p>
+            </div>
           </div>
         </Slider>
       </div>
