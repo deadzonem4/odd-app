@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "../../node_modules/slick-carousel/slick/slick.css";
 import "../../node_modules/slick-carousel/slick/slick-theme.css";
 import '../common/styles/main.css';
-
+import {Helmet} from "react-helmet";
 const userLang = navigator.language || navigator.userLanguage; 
 
 const one = "12 000BGN";
@@ -58,6 +58,10 @@ class Test extends React.Component {
     };
     return (
       <div className="test">
+      <Helmet>
+        <title>Test Page</title>
+        <meta name="description" content="Test page description" />
+      </Helmet>
       <div className="red-box">
       <p>
         Последни<br/>топ печалби

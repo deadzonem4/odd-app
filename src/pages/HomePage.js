@@ -1,7 +1,7 @@
 import React from 'react';
 import OddsBox from '../components/OddsBox';
 import Sidebar from '../components/Sidebar';
-
+import {Helmet} from "react-helmet";
 const url = 'https://api.the-odds-api.com/v3/odds/?sport=UPCOMING&region=uk&apiKey=537c7f0eaaa48e1b3434ea434b654898';
 
 class HomePage extends React.Component {
@@ -46,6 +46,10 @@ class HomePage extends React.Component {
       <main id="content">
         <div className="container">
           <div className="row">
+            <Helmet>
+              <title>Home Page</title>
+              <meta name="description" content="Home page description" />
+            </Helmet>
             <Sidebar 
               col="3"
               title="Top Events"
