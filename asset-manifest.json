@@ -1,12 +1,12 @@
 {
-  "main.css": "static/css/main.b14fd92d.css",
-  "main.css.map": "static/css/main.b14fd92d.css.map",
-  "main.js": "static/js/main.32b2fadf.js",
-  "main.js.map": "static/js/main.32b2fadf.js.map",
-  "static/media/jackpotCards-boxes.png": "static/media/jackpotCards-boxes.01fe4eb4.png",
-  "static/media/mystery-boxes.png": "static/media/mystery-boxes.2ac868fa.png",
+  "main.css": "static/css/main.add8ccd7.css",
+  "main.css.map": "static/css/main.add8ccd7.css.map",
+  "main.js": "static/js/main.767606f8.js",
+  "main.js.map": "static/js/main.767606f8.js.map",
+  "static/media/main-jackpot-mystery-logo.png": "static/media/main-jackpot-mystery-logo.a99cc758.png",
   "static/media/slick.eot": "static/media/slick.ced611da.eot",
   "static/media/slick.svg": "static/media/slick.f97e3bbf.svg",
   "static/media/slick.ttf": "static/media/slick.d41f55a7.ttf",
-  "static/media/slick.woff": "static/media/slick.b7c9e1e4.woff"
+  "static/media/slick.woff": "static/media/slick.b7c9e1e4.woff",
+  "static/media/sub-jackpot-mega.png": "static/media/sub-jackpot-mega.727374e8.png"
 }
