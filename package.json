@@ -4,12 +4,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel-preset-react-app": "^7.0.2",
     "bootstrap": "^4.1.2",
+    "express": "^4.16.4",
+    "ignore-styles": "^5.0.1",
     "react": "^16.4.1",
     "react-beautiful-dnd": "^9.0.1",
     "react-cookie": "^2.2.0",
     "react-cookie-banner": "^4.0.0",
     "react-cookie-consent": "^1.7.0",
+    "react-countup": "^4.1.2",
     "react-dom": "^16.4.1",
     "react-helmet": "^5.2.0",
     "react-router-dom": "^4.3.1",
@@ -27,6 +31,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "@babel/preset-es2015": "^7.0.0-beta.53",
     "gh-pages": "^1.2.0"
   }
 }

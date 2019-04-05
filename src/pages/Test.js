@@ -4,7 +4,25 @@ import "../../node_modules/slick-carousel/slick/slick.css";
 import "../../node_modules/slick-carousel/slick/slick-theme.css";
 import '../common/styles/main.css';
 import {Helmet} from "react-helmet";
-const userLang = navigator.language || navigator.userLanguage; 
+
+
+class Test extends React.Component {
+  // componentWillMount(){
+  //   console.log("The language is: " + userLang);
+  // }
+
+  // componentDidMount() {
+  //   window.addEventListener("resize", this.resize.bind(this));
+
+  // }
+
+  // resize() {
+  //   if (window.innerWidth <= 760) {
+  //     document.location = 'https://affiliate.winbet-bg.com/#/'
+  //   }
+  // }
+  render() {
+    // const userLang = navigator.language || navigator.userLanguage; 
 
 const one = "12 000BGN";
 const two = "15 000BGN";
@@ -22,25 +40,6 @@ for( var i=0; i<values.length;i++){
   values[i] = parseInt(values[i], 10);
   newVals.push(values[i]);
 }
-
-console.log(newVals);
-
-class Test extends React.Component {
-  componentWillMount(){
-    console.log("The language is: " + userLang);
-  }
-
-  componentDidMount() {
-    window.addEventListener("resize", this.resize.bind(this));
-
-  }
-
-  resize() {
-    if (window.innerWidth <= 760) {
-      document.location = 'https://affiliate.winbet-bg.com/#/'
-    }
-  }
-  render() {
     var settings = {
       centerMode: true,
       draggable:true,
@@ -67,7 +66,7 @@ class Test extends React.Component {
         Последни<br/>топ печалби
       </p>
       </div>
-      <div className="main-slider">
+      <div className="main-slider2">
         <Slider {...settings} className="full-width-slider">
           <div className="slide">
             <div className="">

@@ -23,10 +23,11 @@ header{
 	padding-top: 25px;
   padding-bottom: 25px;
   transition: .2s ease-in-out;
+  border-bottom: solid 2px transparent;
 }
 .nav-link:hover{
-	background-color: #98a3b7;
-	color: #07143e;
+	border-bottom: solid 2px #fff;
+	color: #fff;
 }
 .navbar-brand, .navbar-brand:hover, .navbar-brand:focus{
 	color: #fff;
@@ -225,24 +226,24 @@ footer{
   }
 }
 /*-----------------------------Slider----------------------*/
-.slide span{
+.main-slider2 .slide span{
 	font-size: 12px;
 	color: #000;
 	font-weight: 600;
 }
-.slide h4{
+.main-slider2 .slide h4{
 	font-size: 16px;
 	color: red;
 	font-weight: 600;
 	margin-bottom: 0;
 }
-.slide p{
+.main-slider2 .slide p{
 	font-size: 12px;
 	text-transform: uppercase;
 	font-weight: 600;
 	margin-bottom: 0;
 }
-.slide{
+.main-slider2 .slide{
 	cursor: pointer;
 	display: flex;
 	justify-content: center;
@@ -256,7 +257,7 @@ footer{
 	position: absolute;
 	left: 0;
 	top: -1px;
-	background-color: #d20000;
+	background-color: #ce0000;
 	color: #fff;
 	font-weight: 600;
 	font-size: 20px;
@@ -270,15 +271,16 @@ footer{
 	align-items: center;
 	text-transform: uppercase;
 }
-.test{
+.win-slider{
 	position: relative;
+  border-bottom: solid 2px #ce0000;
 }
 .red-box p{
 	margin-left: 35px;
 	line-height: 1.2;
 	margin-bottom: 0;
 }
-.slick-slider{
+.main-slider2 .slick-slider{
 	margin-left: 230px;
 }
 @keyframes pulse {
@@ -312,4 +314,422 @@ footer{
 .promo{
 	-webkit-animation: pulse 2.5s ease-in-out infinite both;
   animation: pulse 2.5s ease-in-out infinite both;
+}
+/*-------------------------------Main Slider---------------------------------*/
+.custom-home-menu nav{
+  background: transparent!important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  border: none!important;
+}
+.overlay-content{
+  margin-bottom: 220px;
+}
+.slider-border{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  top: 78px;
+  z-index: 100;
+}
+.wait-page{
+  min-height: 90vh;
+}
+.slide img{
+  width: 100%;
+}
+.slider-front-img{
+  max-width: 600px;
+}
+.main-slider .slick-slide{
+  visibility: hidden!important;
+}
+.main-slider .slick-slide.slick-active.slick-current{
+  visibility: visible!important;
+}
+.main-slider .title-white-line{
+  margin-left: 0;
+  margin-bottom: 4vh;
+}
+.slider-overlay h2{
+  font-size: 42px;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  max-width: 500px;
+  font-weight: 300;
+  margin: 0 0 2vh;
+}
+.slider-overlay p{
+  max-width: 450px;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.43;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 5vh;
+}
+.main-slider{
+  position: relative;
+  overflow: hidden;
+  max-height: 100vh;
+  background: #000;
+}
+.main-slider .slide > img{
+  display: inline-block!important;
+}
+.slider-overlay{
+  position: absolute;
+  width: auto;
+  height: 100%;
+  top: 0px;
+  left: 15vw;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.slider-register{
+  display: inline-block;
+  padding: 12px 28px;
+  border: solid 2px;
+  border-radius: 4px;
+  font-size: 17px;
+  font-weight: 600;
+  margin-right: 8px;
+  cursor: pointer;
+  min-width: 174px;
+  text-align: center;
+  transition: ease .2s;
+}
+.slider-log-in{
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 4px;
+  border: solid 2px;
+  font-size: 17px;
+  min-width: 174px;
+  text-align: center;
+  cursor: pointer;
+  transition: ease .2s;
+}
+.slider-log-in:hover, .slider-register:hover{
+  -webkit-filter: brightness(0.7);
+  filter: brightness(0.7);
+}
+.main-slider .slider-log-in:hover{
+  background-color: #fff;
+  color: rgba(49, 49, 49, 1);
+}
+.main-slider .slider-register:hover{
+  background-color: #940f14;
+  color: #fff;
+  border: solid 2px #940f14;
+}
+.main-slider .slick-slider{
+  position: static;
+}
+.main-slider .slick-dots{
+  bottom: 30px;
+}
+.main-slider .slick-dots li button:before{
+  color: #fff;
+  font-size: 12px;
+}
+.slick-dots li.slick-active button:before{
+  color: #fff!important;
+}
+.main-slider .slick-dots li{
+  margin: 0;
+}
+.slider-jackpot-box{
+  position: absolute;
+  background-image: linear-gradient(to top, rgba(23,7,57,1) , rgba(23,7,57,0));
+  top: 78px;
+  right: 15vw;
+  height: 100vh;
+  width: 440px;
+}
+.emty-slider-front-img{
+  display: none!important;
+}
+@media only screen and (min-width: 1800px){
+  .slider-jackpot-box{
+    right: 21vw;
+  }
+  .slider-overlay{
+    left: 21vw;
+  }
+}
+@media only screen and (max-width: 1400px){
+  .slider-overlay img{
+    width: 200px;
+    margin: 7vh 0 2vh -5px;
+  }
+  .slider-overlay h2{
+    font-size: 30px;
+    max-width: 330px;
+    margin: 0 0 2vh;
+  }
+  .slider-overlay p {
+    max-width: 360px;
+    font-size: 15px;
+  }
+  .slider-register, .slider-log-in{
+    min-width: 150px;
+    font-size: 15px;
+    padding: 10px 25px;
+  }
+  .slider-jackpot-box{
+    right: 12vw;
+  }
+  .slider-overlay{
+    left: 12vw;
+  }
+}
+@media only screen and (max-width: 1100px){
+  .slider-overlay img{
+    width: 160px;
+    margin: 5vh 0 2vh -4px;
+  }
+  .slider-overlay h2{
+    font-size: 26px;
+    max-width: 280px;
+    margin: 0 0 2vh;
+  }
+  .slider-overlay p {
+    max-width: 330px;
+    font-size: 14px;
+    margin-bottom: 3vh;
+  }
+  .slider-register, .slider-log-in{
+    min-width: 150px;
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+  .slider-jackpot-box{
+    right: 9vw;
+  }
+  .slider-overlay{
+    left: 9vw;
+  }
+}
+@media only screen and (max-width: 900px){
+  .slider-overlay img{
+    width: 100px;
+    margin: 21px 0 10px -3px;
+  }
+  .slider-overlay h2{
+    font-size: 17px;
+    max-width: 200px;
+    margin: 0 0 10px;
+  }
+  .slider-overlay p {
+    max-width: 275px;
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  .slider-register, .slider-log-in{
+    min-width: 120px;
+    font-size: 13px;
+    padding: 8px 17px;
+  }
+  .main-slider .title-white-line{
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 700px){
+  .slider-overlay img{
+    margin: 10vh 0 15px -2px;
+  }
+  .slider-overlay p {
+    display: none;
+  }
+  .slider-overlay h2 {
+    margin-bottom: 30px;
+  }
+  .main-slider .title-white-line{
+    display: none;
+  }
+  .main-slider .slick-dots li button:before{
+    font-size: 9px;
+  }
+  .main-slider .slick-dots li, .main-slider .slick-dots li button, .main-slider .slick-dots li button:before{
+    width: 15px;
+    height: 15px;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 550px){
+  .main-slider .slick-dots{
+    bottom: 15px;
+  }
+}
+@media only screen and (max-width: 500px){
+  .slider-overlay img{
+    margin: 7vh 0 10px -2px;
+    width: 80px;
+  }
+  .slider-overlay h2 {
+    font-size: 14px;
+    max-width: 145px;
+  }
+  .slider-register, .slider-log-in{
+    display: none;
+  }
+}
+/*------------------------------------------JackpotBox------------------------------------------*/
+.main-mystery-box-img-title{
+  max-width: 330px!important;
+  margin: 0 auto;
+  width: 100%;
+}
+.main-mystery-box, .main-jackpotCards-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35vh;
+  border-bottom: solid 2px #341b56; 
+  flex-direction: column;
+}
+.main-mystery-box-mega .main-mystery-box-img{
+  max-width: 330px!important;
+  margin: 0 auto;
+  width: 100%;
+}
+.main-mystery-box-super .main-mystery-box-img{
+  max-width: 300px!important;
+  margin: 0 auto;
+  width: 100%;
+}
+.custom-count-mega, .custom-count-super, .custom-count-online, .custom-count-ra, .custom-count-versai, .custom-count-burning{
+  color: #f9f9f9;
+  position: absolute;
+  font-size: 32px;
+  font-weight: 900;
+  top: 10px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  text-align: center;
+}
+.main-mystery-box-mega, .main-mystery-box-super{
+  position: relative;
+  width: 330px;
+}
+.main-jackpotCards-box-splash, .main-jackpotCards-box-heart, .main-jackpotCards-box-diamond, .main-jackpotCards-box-spade{
+  position: relative;
+  margin-bottom: 5px;
+  width: 330px;
+}
+.main-jackpotCards-box-splash .main-jackpotCards-box-img{
+  max-width: 330px!important;
+  margin: 0 auto;
+  width: 100%;
+}
+.main-jackpotCards-box-heart .main-jackpotCards-box-img{
+  max-width: 310px!important;
+  margin: 0 auto;
+  width: 100%;
+}
+.main-jackpotCards-box-diamond .main-jackpotCards-box-img{
+  max-width: 290px!important;
+  margin: 0 auto;
+  width: 100%;
+}
+.main-jackpotCards-box-spade .main-jackpotCards-box-img{
+  max-width: 270px!important;
+  margin: 0 auto;
+  width: 100%;
+}
+.custom-count-splash, .custom-count-heart, .custom-count-diamond, .custom-count-spade{
+  color: #f9f9f9;
+  position: absolute;
+  font-size: 32px;
+  font-weight: 900;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-count-splash{
+  top: 23px;
+}
+.custom-count-heart{
+  top: 7px;
+}
+.custom-count-diamond{
+  top: 7px;
+}
+.custom-count-spade{
+  top: 7px;
+}
+.main-mystery-box-currency{
+  width: 11px!important;
+  display: inline-block!important;
+  margin-left: 12px;
+  opacity: .6;
+}
+/*-------------------------------Sub Mega and Jackpotcards--------------------------*/
+.sub-mystery-slider .main-mystery-box{
+  height: auto;
+  border-bottom: none;
+  margin-top: 10px;
+}
+.sub-jackpotCards-slider .main-jackpotCards-box{
+  height: auto;
+  border-bottom: none;
+  margin-top: 30px;
+}
+.sub-online-slider .main-mystery-box{
+  height: auto;
+  border-bottom: none;
+  margin-top: 15px;
+}
+.sub-progressive-slider .main-mystery-box{
+  height: auto;
+  border-bottom: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.sub-jackpotCards-slider .main-jackpotCards-box-splash .main-jackpotCards-box-img, .sub-mystery-slider .main-mystery-box-mega .main-mystery-box-img, .sub-online-slider .main-mystery-box-mega .main-mystery-box-img, .sub-progressive-slider .main-mystery-box-mega .main-mystery-box-img{
+  max-width: 300px!important;
+}
+.sub-mystery-slider .custom-count-mega, .sub-jackpotCards-slider .custom-count-splash, .sub-online-slider .custom-count-online, .sub-progressive-slider .custom-count-ra, .sub-progressive-slider .custom-count-versai, .sub-progressive-slider .custom-count-burning{
+  font-size: 28px;
+  right: 35px;
+}
+.sub-jackpotCards-slider .custom-count-splash{
+  top: 23px;
+}
+.sub-mystery-slider .custom-count-mega{
+  top: 60px;
+}
+.sub-online-slider .custom-count-online{
+  top: 29px;
+}
+.sub-progressive-slider .custom-count-ra{
+  top: 33px;
+}
+.sub-progressive-slider .custom-count-versai{
+  top: 26px;
+}
+.sub-progressive-slider .custom-count-burning{
+  top: 42px;
+}
+.sub-mystery-slider .main-mystery-box-currency, .sub-jackpotCards-slider .main-mystery-box-currency, .sub-online-slider .main-mystery-box-currency, .sub-progressive-slider .main-mystery-box-currency{
+  width: 10px!important;
+}
+.main-slider .sub-progressive-slider .slick-slide{
+  visibility: visible!important;
+}
+.main-slider .sub-progressive-slider .slick-track{
+  height: auto!important;
 }

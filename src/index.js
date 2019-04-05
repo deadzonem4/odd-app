@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import HomePage from './pages/HomePage';
+import { BrowserRouter, Switch } from 'react-router-dom';
+import Urls from './pages/Urls';
+import NewsPage from './pages/NewsPage';
 import Test from './pages/Test';
 import ErrorPage from './pages/ErrorPage';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import AppRoute from './layouts/AppRoute';
+import MainLayout from './layouts/MainLayout';
+import HomeLayout from './layouts/HomeLayout';
 import './common/styles/main.css';
 
 
@@ -17,13 +19,13 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div>
-          <Header/>
           <Switch>
-            <Route exact path="/odd-app" component={HomePage} />
-            <Route exact path="/test" component={Test} />
-            <Route  component={ErrorPage} />
+            <AppRoute layout={HomeLayout} exact path="/odd-app" component={NewsPage} />
+            <AppRoute layout={MainLayout} exact path="/odd-app/test" component={Test} />
+            <AppRoute layout={MainLayout} exact path="/odd-app/urls" component={Urls} />
+            <AppRoute layout={HomeLayout} exact path="/odd-app/news" component={NewsPage} />
+            <AppRoute layout={MainLayout} component={ErrorPage} />
           </Switch>
-          <Footer text="All rights reserved. Design & development Rosen Georgiev"/>
         </div>
       </BrowserRouter>
     );
@@ -32,3 +34,4 @@ class App extends Component {
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
+

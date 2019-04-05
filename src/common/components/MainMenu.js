@@ -12,25 +12,58 @@ const styles = {};
 
 styles.fill = {
   background: '#23345c',
-  boxShadow: '0px 2px 11px 1px rgba(0, 0, 0, 0.31)',
   borderBottom: 'solid 1px #98a3b7'
 };
+
+
+// const homePage = window.location.href;
 
 class MainMenu extends React.Component {
   constructor(props) {
     super(props);
 
     this.toggle = this.toggle.bind(this);
-    this.state = {isOpen: false};
+    this.state = {
+      isOpen: false,
+      isHome: false
+    };
   }
+  // shouldComponentUpdate(){
+    
+  //   if(homePage === "http://localhost:3000/odd-app/news"){
+  //     this.setState({
+  //       isHome: true
+  //     });
+  //   }
+  //     else{
+  //             this.setState({
+  //       isHome: false
+  //     });
+  //     }
+  // }
+  componentWillUnmount(){
+
+console.log("here");
+
+  }
+  //   shouldComponentUpdate(){
+
+  //   if(homePage === "http://localhost:3000/odd-app/news"){
+  //     this.setState({
+  //       isHome: !this.state.isHome
+  //     });
+  //   }
+
+  // }
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
     });
   }
   render() {
+    
     return (
-      <div>
+      <div className={this.props.menuType}>
         <Navbar color="custom-header" expand="md"  style={{...styles.fill}}>
           <div className="container">
             <Link className="navbar-brand" to="odd-app">
@@ -43,12 +76,12 @@ class MainMenu extends React.Component {
                   <Link className="nav-link" to="/odd-app">Home</Link>
                 </NavItem>
                 <NavItem>
-                  <Link className="nav-link" to="/test">Test</Link>
+                  <Link className="nav-link" to="/odd-app">Menu</Link>
                 </NavItem>
                 <NavItem>
                   <Link className="nav-link" to="/odd-app">Menu</Link>
                 </NavItem>
-                <NavItem>
+                <NavItem onClick={this.menuChange}>
                   <Link className="nav-link" to="/odd-app">Menu</Link>
                 </NavItem>
               </Nav>

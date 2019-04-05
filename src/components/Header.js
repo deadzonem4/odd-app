@@ -5,7 +5,7 @@ const Header = (props) => {
     
     return (
       <div>
-        <MainMenu/>
+        <MainMenu menuType={props.menuType}/>
       </div>
     );
 }
