@@ -733,3 +733,12 @@ footer{
 .main-slider .sub-progressive-slider .slick-track{
   height: auto!important;
 }
+.sub-progressive-slider{
+  position: relative!important;
+}
+.sub-progressive-slider .slick-arrow.slick-prev{
+  left: 0;
+}
+.sub-progressive-slider .slick-arrow.slick-next{
+  right: 0;
+}
