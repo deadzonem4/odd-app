@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import '../common/styles/main.css';
 import JackpotBox from "./JackpotBox";
 import SliderOverlay from "./SliderOverlay";
+import SliderBackground from "./SliderBackground";
 
 class MainSlider extends React.Component {
   render() {
@@ -16,7 +17,7 @@ class MainSlider extends React.Component {
         return(
           <div className="slide" key={index}>
             <div className="slider-border" style={{...sldierStyles.border}}></div>
-            <img src={"https://win-cor.winbet-bg.com/storage/" + data.background_file_name} alt='winbet'/>
+            <SliderBackground  data={data}/>
             <SliderOverlay data={data} title="front_file_title" description="front_file_description" button1="button_1_text" button2="button_2_text"/>
           </div>
         )
@@ -24,9 +25,9 @@ class MainSlider extends React.Component {
         return(
           <div className="slide" key={index}>
             <div className="slider-border" style={{...sldierStyles.border}}></div>
-            <img src={"https://win-cor.winbet-bg.com/storage/" + data.background_file_name} alt='winbet'/>
+            <SliderBackground  data={data}/>
             <SliderOverlay data={data} title="front_file_title" description="front_file_description" button1="button_1_text" button2="button_2_text"/>
-            <JackpotBox/>
+            <JackpotBox data={data}/>
           </div>
         )
     });

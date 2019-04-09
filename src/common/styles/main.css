@@ -446,7 +446,7 @@ footer{
 }
 .slider-jackpot-box{
   position: absolute;
-  background-image: linear-gradient(to top, rgba(23,7,57,1) , rgba(23,7,57,0));
+/*  background-image: linear-gradient(to top, rgba(23,7,57,1) , rgba(23,7,57,0));*/
   top: 78px;
   right: 15vw;
   height: 100vh;
