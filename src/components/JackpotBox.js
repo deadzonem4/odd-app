@@ -17,11 +17,7 @@ const JackpotBox = (props) => {
     <div className="slider-jackpot-box" style={{...sldierStyles.back}}>
 		  <JackpotData dataLink="https://win-cor.winbet-bg.com/api/home-sliders/prepared-data">
 		  	<MainJackpot/>
-		  </JackpotData>
-		  <JackpotData dataLink="https://win-cor.winbet-bg.com/api/home-sliders/prepared-data">
 		  	<ProgressiveJackpot/>
-		  </JackpotData>
-		  <JackpotData dataLink="https://win-cor.winbet-bg.com/api/home-sliders/prepared-data">
 		  	<OnlineJackpot/>
 		  </JackpotData>
     </div>

@@ -5,7 +5,7 @@ class MainContainer extends React.Component {
 	constructor(props) {
     super(props);
     this.state = {
-      api: '',
+      api: {},
       url: this.props.dataLink,
       loading: true
     };
@@ -39,6 +39,7 @@ class MainContainer extends React.Component {
     });
   }
   render() {
+    let elements = React.Children.toArray(this.props.children)
     if (this.state.loading) {
       return (
         <div className="wait-page">Please Wait</div>
@@ -46,8 +47,9 @@ class MainContainer extends React.Component {
     }
 	  return (
       <div>
-        {React.cloneElement(this.props.children, { data: this.state.api})}
-        
+        {React.cloneElement(elements[0], { data: this.state.api})}
+        {React.cloneElement(elements[1], { data: this.state.api})}
+        {React.cloneElement(elements[2], { data: this.state.api})}
       </div>
 	  );
 	}
