@@ -12,7 +12,6 @@ class MainSlider extends React.Component {
       sldierStyles.border = {
         backgroundColor: data.border_color_slider
       };
-
       if(data.has_mystery === 0) {
         return(
           <div className="slide" key={index}>
@@ -22,14 +21,14 @@ class MainSlider extends React.Component {
           </div>
         )
       }
-        return(
-          <div className="slide" key={index}>
-            <div className="slider-border" style={{...sldierStyles.border}}></div>
-            <SliderBackground  data={data}/>
-            <SliderOverlay data={data} title="front_file_title" description="front_file_description" button1="button_1_text" button2="button_2_text"/>
-            <JackpotBox data={data}/>
-          </div>
-        )
+      return(
+        <div className="slide" key={index}>
+          <div className="slider-border" style={{...sldierStyles.border}}></div>
+          <SliderBackground  data={data}/>
+          <SliderOverlay data={data} title="front_file_title" description="front_file_description" button1="button_1_text" button2="button_2_text"/>
+          <JackpotBox data={data}/>
+        </div>
+      )
     });
 
     var settings = {
