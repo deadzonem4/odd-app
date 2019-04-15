@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from "../../images/winbet-logo.png";
 import {
   Collapse,
   Navbar,
@@ -67,22 +68,28 @@ console.log("here");
         <Navbar color="custom-header" expand="md"  style={{...styles.fill}}>
           <div className="container">
             <Link className="navbar-brand" to="odd-app">
-              <p>Logo</p>
+              <img src={logo}  alt="winbet"/>
             </Link>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <Link className="nav-link" to="/odd-app">Home</Link>
+                  <Link className="nav-link" to="/odd-app">Начало</Link>
                 </NavItem>
                 <NavItem>
-                  <Link className="nav-link" to="/odd-app">Menu</Link>
+                  <Link className="nav-link" to="/odd-app">Игрални зали</Link>
                 </NavItem>
                 <NavItem>
-                  <Link className="nav-link" to="/odd-app">Menu</Link>
+                  <Link className="nav-link" to="/odd-app">Онлайн казино</Link>
                 </NavItem>
-                <NavItem onClick={this.menuChange}>
-                  <Link className="nav-link" to="/odd-app">Menu</Link>
+                <NavItem>
+                  <Link className="nav-link" to="/odd-app">Спортни барове</Link>
+                </NavItem>
+                <NavItem>
+                  <Link className="nav-link" to="/odd-app">За нас</Link>
+                </NavItem>
+                <NavItem>
+                  <Link className="nav-link" to="/odd-app">Контакти</Link>
                 </NavItem>
               </Nav>
             </Collapse>
