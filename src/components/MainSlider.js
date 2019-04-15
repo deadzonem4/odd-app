@@ -34,9 +34,9 @@ class MainSlider extends React.Component {
     var settings = {
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: false,
+      autoplay: true,
       pauseOnHover: false,
-      autoplaySpeed: 8000,
+      autoplaySpeed: 11600,
       infinite: true,
       speed: 400,
       fade: true,

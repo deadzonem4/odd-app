@@ -16,9 +16,9 @@ class OnlineJackpot extends React.Component {
 	componentDidMount(){
     this.interval = setInterval(() => {
       this.setState({ 
-        countOnline: this.props.data[1].mega,
+        countOnline: this.props.data.onlinePika/100,
       });
-    }, 9000);
+    }, 7000);
 	}
   render() {
     var settings = {
@@ -44,8 +44,8 @@ class OnlineJackpot extends React.Component {
 	          		<img className="main-mystery-box-img" src={onlineJack}  alt="winbet online"/>
 	          		<div className="custom-count-online">
 	          		  <CountUp
-								    start={parseInt(this.state.countOnline, 10)}
-								    end={parseInt(this.props.data[1].mega, 10)}
+								    start={this.state.countOnline}
+								    end={(this.props.data.onlinePika)/100}
 								    duration={2.75}
 								    decimals={2}
 								    useEasing={true}

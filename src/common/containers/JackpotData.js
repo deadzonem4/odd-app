@@ -17,7 +17,7 @@ class MainContainer extends React.Component {
   componentDidMount() {
     this.interval = setInterval(() => {
         this.fetchData();
-    }, 7000);
+    }, 8000);
   }
  componentWillUnmount() {
     clearInterval(this.interval);

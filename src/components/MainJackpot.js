@@ -35,7 +35,7 @@ class MainSlider extends React.Component {
         countDiamond: this.props.data[2].karo,
         countSpade: this.props.data[2].spatia,
       });
-    }, 9000);
+    }, 7000);
 	}
   render() {
     var settings = {
@@ -52,173 +52,178 @@ class MainSlider extends React.Component {
       cssEase: 'linear',
       dots: false
     };
-    	if (this.props.data[0] !== "mystery") {
-    		return(
-		    	<div className="main-jackpot-slider">
-		        <Slider {...settings} className="full-width-slider">
-		          <div className="slide">
-		          	<div className="main-mystery-box">
-		          		<img className="main-mystery-box-img-title" src={mysteryLogo}  alt="winbet mystery"/>
-			          	<div className="main-mystery-box-mega">
-			          		<img className="main-mystery-box-img" src={megaJack}  alt="winbet mystery mega"/>
-			          		<div className="custom-count-mega">
-			          		  <CountUp
-										    start={parseInt(this.state.countMega, 10)}
-										    end={parseInt(this.props.data[1].mega, 10)}
-										    duration={2.75}
-										    decimals={2}
-										    useEasing={true}
-										    separator=" "
-										    decimal=","
-										    redraw={true}
-										  />
-										  <img className="main-mystery-box-currency" src={currencyJack}  alt="winbet jackpotCards"/>
-									  </div>
-									</div>
-									<div className="main-mystery-box-super">
-										<img className="main-mystery-box-img" src={superJack}  alt="winbet mystery super"/>
-										<div className="custom-count-super">
-										  <CountUp
-										    className=""
-										    start={parseInt(this.state.countSuper, 10)}
-										    end={parseInt(this.props.data[1].super, 10)}
-										    duration={2.75}
-										    decimals={2}
-										    useEasing={true}
-										    separator=" "
-										    decimal=","
-										    redraw={true}
-										  />
-										  <img className="main-mystery-box-currency" src={currencyJack}  alt="winbet jackpotCards"/>
-									  </div>
-									</div>
-		          	</div>
-		          </div>
-		        </Slider>
-		        <Slider {...settings} className="full-width-slider sub-jackpotCards-slider">
-		          <div className="slide">
-		          	<div className="main-jackpotCards-box">
-		          		<div className="main-jackpotCards-box-splash">
-			          		<img className="main-jackpotCards-box-img" src={splashJack}  alt="winbet jackpotCards"/>
-			          		<div className="main-jackpotCards-box-content">
-			          		<div className="custom-count-splash">
-			          		  <CountUp
-										    start={parseInt(this.state.countSplash, 10)}
-										    end={parseInt(this.props.data[2].pika, 10)}
-										    duration={2.75}
-										    decimals={2}
-										    useEasing={true}
-										    separator=" "
-										    decimal=","
-										    redraw={true}
-										  />
-										  <img className="main-mystery-box-currency" src={currencyJack}  alt="winbet jackpotCards"/>
-									  </div>
-									  </div>
-									</div>									
-		          	</div>
-		          </div>
-		        </Slider>
-		      </div>
-      	)
-    	};
-    	return(
-		    	<div className="main-jackpot-slider">
-		        <Slider {...settings} className="full-width-slider">
-		          <div className="slide">
-		          	<div className="main-jackpotCards-box">
-		          		<div className="main-jackpotCards-box-splash">
-			          		<img className="main-jackpotCards-box-img" src={splashJack}  alt="winbet jackpotCards"/>
-			          		<div className="main-jackpotCards-box-content">
-			          		<div className="custom-count-splash">
-			          		  <CountUp
-										    start={parseInt(this.state.countSplash, 10)}
-										    end={parseInt(this.props.data[2].pika, 10)}
-										    duration={2.75}
-										    decimals={2}
-										    useEasing={true}
-										    separator=" "
-										    decimal=","
-										    redraw={true}
-										  />
-										  <img className="main-mystery-box-currency" src={currencyJack}  alt="winbet jackpotCards"/>
-									  </div>
-									  </div>
-									</div>
-									<div className="main-jackpotCards-box-heart">
-										<img className="main-jackpotCards-box-img" src={heartJack}  alt="winbet jackpotCards"/>
-			          		<div className="custom-count-heart">
-			          		  <CountUp
-										    start={parseInt(this.state.countHeart, 10)}
-										    end={parseInt(this.props.data[2].cupa, 10)}
-										    duration={2.75}
-										    decimals={2}
-										    useEasing={true}
-										    separator=" "
-										    decimal=","
-										    redraw={true}
-										  />
-										  <img className="main-mystery-box-currency" src={currencyJack}  alt="winbet jackpotCards"/>
-									  </div>
-									</div>
-									<div className="main-jackpotCards-box-diamond">
-										<img className="main-jackpotCards-box-img" src={diamondJack}  alt="winbet jackpotCards"/>
-			          		<div className="custom-count-diamond">
-			          		  <CountUp
-										    start={parseInt(this.state.countDiamond, 10)}
-										    end={parseInt(this.props.data[2].karo, 10)}
-										    duration={2.75}
-										    decimals={2}
-										    useEasing={true}
-										    separator=" "
-										    decimal=","
-										    redraw={true}
-										  />
-										  <img className="main-mystery-box-currency" src={currencyJack}  alt="winbet jackpotCards"/>
-									  </div>
-									</div>
-									<div className="main-jackpotCards-box-spade">
-										<img className="main-jackpotCards-box-img" src={spadeJack}  alt="winbet jackpotCards"/>
-				          	<div className="custom-count-spade">
-			          		  <CountUp
-										    start={parseInt(this.state.countSpade, 10)}
-										    end={parseInt(this.props.data[2].spatia, 10)}
-										    duration={2.75}
-										    decimals={2}
-										    useEasing={true}
-										    separator=" "
-										    decimal=","
-										    redraw={true}
-										  />
-										  <img className="main-mystery-box-currency" src={currencyJack}  alt="winbet jackpotCards"/>
-									  </div>
-									</div>									
-		          	</div>
-		          </div>
-		        </Slider>
-		        <Slider {...settings} className="full-width-slider sub-mystery-slider">
-		          <div className="slide">
-		          	<div className="main-mystery-box">
-			          	<div className="main-mystery-box-mega">
-			          		<img className="main-mystery-box-img" src={megaSubJack}  alt="winbet mystery mega"/>
-			          		<div className="custom-count-mega">
-			          		  <CountUp
-										    start={parseInt(this.state.countMega, 10)}
-										    end={parseInt(this.props.data[1].mega, 10)}
-										    duration={2.75}
-										    decimals={2}
-										    useEasing={true}
-										    separator=" "
-										    decimal=","
-										    redraw={true}
-										  />
-										  <img className="main-mystery-box-currency" src={currencyJack}  alt="winbet jackpotCards"/>
-									  </div>
-									</div>
-		          	</div>
-		          </div>
-		        </Slider>
-		      </div>
+    var jackpotBox = {};
+    var borderColor = 'solid 2px ' + this.props.sliderData.border_color_slider;
+	  jackpotBox.border = {
+	    borderBottom: borderColor
+	  };
+  	if (this.props.data[0] !== "mystery") {
+  		return(
+	    	<div className="main-jackpot-slider">
+	        <Slider {...settings} className="full-width-slider">
+	          <div className="slide">
+	          	<div className="main-mystery-box" style={{...jackpotBox.border}}>
+	          		<img className="main-mystery-box-img-title" src={mysteryLogo}  alt="winbet mystery"/>
+		          	<div className="main-mystery-box-mega">
+		          		<img className="main-mystery-box-img" src={megaJack}  alt="winbet mystery mega"/>
+		          		<div className="custom-count-mega">
+		          		  <CountUp
+									    start={parseFloat(this.state.countMega, 10)}
+									    end={parseFloat(this.props.data[1].mega, 10)}
+									    duration={2.75}
+									    decimals={2}
+									    useEasing={true}
+									    separator=" "
+									    decimal=","
+									    redraw={true}
+									  />
+									  <img className="main-mystery-box-currency" src={currencyJack}  alt="winbet jackpotCards"/>
+								  </div>
+								</div>
+								<div className="main-mystery-box-super">
+									<img className="main-mystery-box-img" src={superJack}  alt="winbet mystery super"/>
+									<div className="custom-count-super">
+									  <CountUp
+									    className=""
+									    start={parseFloat(this.state.countSuper, 10)}
+									    end={parseFloat(this.props.data[1].super, 10)}
+									    duration={2.75}
+									    decimals={2}
+									    useEasing={true}
+									    separator=" "
+									    decimal=","
+									    redraw={true}
+									  />
+									  <img className="main-mystery-box-currency" src={currencyJack}  alt="winbet jackpotCards"/>
+								  </div>
+								</div>
+	          	</div>
+	          </div>
+	        </Slider>
+	        <Slider {...settings} className="full-width-slider sub-jackpotCards-slider">
+	          <div className="slide">
+	          	<div className="main-jackpotCards-box">
+	          		<div className="main-jackpotCards-box-splash">
+		          		<img className="main-jackpotCards-box-img" src={splashJack}  alt="winbet jackpotCards"/>
+		          		<div className="main-jackpotCards-box-content">
+		          		<div className="custom-count-splash">
+		          		  <CountUp
+									    start={parseFloat(this.state.countSplash, 10)}
+									    end={parseFloat(this.props.data[2].pika, 10)}
+									    duration={2.75}
+									    decimals={2}
+									    useEasing={true}
+									    separator=" "
+									    decimal=","
+									    redraw={true}
+									  />
+									  <img className="main-mystery-box-currency" src={currencyJack}  alt="winbet jackpotCards"/>
+								  </div>
+								  </div>
+								</div>									
+	          	</div>
+	          </div>
+	        </Slider>
+	      </div>
+    	)
+  	};
+  	return(
+	    	<div className="main-jackpot-slider">
+	        <Slider {...settings} className="full-width-slider">
+	          <div className="slide">
+	          	<div className="main-jackpotCards-box" style={{...jackpotBox.border}}>
+	          		<div className="main-jackpotCards-box-splash">
+		          		<img className="main-jackpotCards-box-img" src={splashJack}  alt="winbet jackpotCards"/>
+		          		<div className="main-jackpotCards-box-content">
+		          		<div className="custom-count-splash">
+		          		  <CountUp
+									    start={parseFloat(this.state.countSplash, 10)}
+									    end={parseFloat(this.props.data[2].pika, 10)}
+									    duration={2.75}
+									    decimals={2}
+									    useEasing={true}
+									    separator=" "
+									    decimal=","
+									    redraw={true}
+									  />
+									  <img className="main-mystery-box-currency" src={currencyJack}  alt="winbet jackpotCards"/>
+								  </div>
+								  </div>
+								</div>
+								<div className="main-jackpotCards-box-heart">
+									<img className="main-jackpotCards-box-img" src={heartJack}  alt="winbet jackpotCards"/>
+		          		<div className="custom-count-heart">
+		          		  <CountUp
+									    start={parseFloat(this.state.countHeart, 10)}
+									    end={parseFloat(this.props.data[2].cupa, 10)}
+									    duration={2.75}
+									    decimals={2}
+									    useEasing={true}
+									    separator=" "
+									    decimal=","
+									    redraw={true}
+									  />
+									  <img className="main-mystery-box-currency" src={currencyJack}  alt="winbet jackpotCards"/>
+								  </div>
+								</div>
+								<div className="main-jackpotCards-box-diamond">
+									<img className="main-jackpotCards-box-img" src={diamondJack}  alt="winbet jackpotCards"/>
+		          		<div className="custom-count-diamond">
+		          		  <CountUp
+									    start={parseFloat(this.state.countDiamond, 10)}
+									    end={parseFloat(this.props.data[2].karo, 10)}
+									    duration={2.75}
+									    decimals={2}
+									    useEasing={true}
+									    separator=" "
+									    decimal=","
+									    redraw={true}
+									  />
+									  <img className="main-mystery-box-currency" src={currencyJack}  alt="winbet jackpotCards"/>
+								  </div>
+								</div>
+								<div className="main-jackpotCards-box-spade">
+									<img className="main-jackpotCards-box-img" src={spadeJack}  alt="winbet jackpotCards"/>
+			          	<div className="custom-count-spade">
+		          		  <CountUp
+									    start={parseFloat(this.state.countSpade, 10)}
+									    end={parseFloat(this.props.data[2].spatia, 10)}
+									    duration={2.75}
+									    decimals={2}
+									    useEasing={true}
+									    separator=" "
+									    decimal=","
+									    redraw={true}
+									  />
+									  <img className="main-mystery-box-currency" src={currencyJack}  alt="winbet jackpotCards"/>
+								  </div>
+								</div>									
+	          	</div>
+	          </div>
+	        </Slider>
+	        <Slider {...settings} className="full-width-slider sub-mystery-slider">
+	          <div className="slide">
+	          	<div className="main-mystery-box">
+		          	<div className="main-mystery-box-mega">
+		          		<img className="main-mystery-box-img" src={megaSubJack}  alt="winbet mystery mega"/>
+		          		<div className="custom-count-mega">
+		          		  <CountUp
+									    start={parseFloat(this.state.countMega, 10)}
+									    end={parseFloat(this.props.data[1].mega, 10)}
+									    duration={2.75}
+									    decimals={2}
+									    useEasing={true}
+									    separator=" "
+									    decimal=","
+									    redraw={true}
+									  />
+									  <img className="main-mystery-box-currency" src={currencyJack}  alt="winbet jackpotCards"/>
+								  </div>
+								</div>
+	          	</div>
+	          </div>
+	        </Slider>
+	      </div>
       );
   }
 }

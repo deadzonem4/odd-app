@@ -12,15 +12,19 @@ class ProgressiveJackpot extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      countOnline : 0,
+      countRa: 0,
+      countVersai: 0,
+      countBurning: 0
     };
 	}
 	componentDidMount(){
     this.interval = setInterval(() => {
       this.setState({ 
-        countOnline: this.props.data[1].mega,
+        countRa: this.props.data[1].ra,
+        countVersai: this.props.data[1].versail,
+        countBurning: this.props.data[1].burning
       });
-    }, 9000);
+    }, 7000);
 	}
   render() {
     var settings = {
@@ -48,8 +52,8 @@ class ProgressiveJackpot extends React.Component {
 	          		<img className="main-mystery-box-img" src={raJack}  alt="winbet rise of ra"/>
 	          		<div className="custom-count-ra">
 	          		  <CountUp
-								    start={parseInt(this.state.countOnline, 10)}
-								    end={parseInt(this.props.data[1].mega, 10)}
+								    start={parseFloat(this.state.countRa, 10)}
+								    end={parseFloat(this.props.data[1].ra, 10)}
 								    duration={2.75}
 								    decimals={2}
 								    useEasing={true}
@@ -68,8 +72,8 @@ class ProgressiveJackpot extends React.Component {
                 <img className="main-mystery-box-img" src={versaiJack}  alt="winbet versai gold"/>
                 <div className="custom-count-versai">
                   <CountUp
-                    start={parseInt(this.state.countOnline, 10)}
-                    end={parseInt(this.props.data[1].mega, 10)}
+                    start={parseFloat(this.state.countVersai, 10)}
+                    end={parseFloat(this.props.data[1].versail, 10)}
                     duration={2.75}
                     decimals={2}
                     useEasing={true}
@@ -88,8 +92,8 @@ class ProgressiveJackpot extends React.Component {
                 <img className="main-mystery-box-img" src={burningJack}  alt="winbet burning hot"/>
                 <div className="custom-count-burning">
                   <CountUp
-                    start={parseInt(this.state.countOnline, 10)}
-                    end={parseInt(this.props.data[1].mega, 10)}
+                    start={parseFloat(this.state.countBurning, 10)}
+                    end={parseFloat(this.props.data[1].burning, 10)}
                     duration={2.75}
                     decimals={2}
                     useEasing={true}
