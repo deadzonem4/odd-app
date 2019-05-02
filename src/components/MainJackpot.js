@@ -57,7 +57,7 @@ class MainSlider extends React.Component {
 	  jackpotBox.border = {
 	    borderBottom: borderColor
 	  };
-  	if (this.props.data[0] !== "mystery") {
+  	if (this.props.data[0] === "mystery") {
   		return(
 	    	<div className="main-jackpot-slider">
 	        <Slider {...settings} className="full-width-slider">

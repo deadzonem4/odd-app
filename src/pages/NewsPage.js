@@ -2,6 +2,7 @@ import React from 'react';
 import MainContainer from '../components/MainContainer';
 import MainSlider from '../components/MainSlider';
 import WinSlider from '../components/WinSlider';
+import OnlineCasino from '../components/OnlineCasino';
 
 const NewsPage = (props) => {
 
@@ -11,6 +12,7 @@ const NewsPage = (props) => {
          <MainSlider/>
       </MainContainer>
       <WinSlider/>
+      <OnlineCasino title="Winbet online casino"/>
 		</div>
 
   );
