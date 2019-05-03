@@ -15,6 +15,7 @@
     "react-cookie-consent": "^1.7.0",
     "react-countup": "^4.1.2",
     "react-dom": "^16.4.1",
+    "react-google-maps": "^9.4.5",
     "react-helmet": "^5.2.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
