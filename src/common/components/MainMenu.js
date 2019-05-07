@@ -42,11 +42,11 @@ class MainMenu extends React.Component {
   //     });
   //     }
   // }
-  componentWillUnmount(){
+//   componentWillUnmount(){
 
-console.log("here");
+// console.log("here");
 
-  }
+//   }
   //   shouldComponentUpdate(){
 
   //   if(homePage === "http://localhost:3000/odd-app/news"){
@@ -65,7 +65,7 @@ console.log("here");
     
     return (
       <div className={this.props.menuType}>
-        <Navbar color="custom-header" expand="md"  style={{...styles.fill}}>
+        <Navbar color="custom-header" expand="lg"  style={{...styles.fill}}>
           <div className="container">
             <Link className="navbar-brand" to="odd-app">
               <img src={logo}  alt="winbet"/>

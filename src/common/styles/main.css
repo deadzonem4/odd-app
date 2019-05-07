@@ -51,6 +51,12 @@ header{
 .nav-item{
 	padding: 0 4px;
 }
+@media only screen and (max-width: 1199px){
+  .nav-link{
+    font-size: 13px;
+    padding: 25px 8px!important;
+  }
+}
 /*--------------------------------------------Footer--------------------*/
 footer{
 	background-color: #23345c;
@@ -169,6 +175,18 @@ footer{
 	-webkit-animation: pulse 2.5s ease-in-out infinite both;
   animation: pulse 2.5s ease-in-out infinite both;
 }
+@media only screen and (max-width: 1300px){
+  .red-box {
+    font-size: 18px;
+    width: 250px;
+  }
+  .main-slider2 .slick-slider {
+    margin-left: 120px;
+  }
+  .main-slider2 .slide{
+    margin: 12px 0;
+  }
+}
 /*-------------------------------Main Slider---------------------------------*/
 .custom-home-menu nav{
   background: transparent!important;
@@ -210,12 +228,12 @@ footer{
   margin-bottom: 4vh;
 }
 .slider-overlay h2{
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 100;
   color: rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
   max-width: 500px;
-  font-weight: 300;
+  font-weight: 900;
   margin: 0 0 2vh;
 }
 .slider-overlay p{
@@ -319,18 +337,22 @@ footer{
     margin-bottom: 220px;
   }
 }
-@media only screen and (max-width: 1400px){
-  .slider-overlay img{
-    width: 200px;
-    margin: 7vh 0 2vh -5px;
+@media only screen and (max-width: 1550px){
+  .slider-overlay{
+    left: 10vw;
   }
+  .slider-jackpot-box{
+    right: 10vw;
+  }
+}
+@media only screen and (max-width: 1400px){
   .slider-overlay h2{
     font-size: 30px;
-    max-width: 330px;
+    max-width: 360px;
     margin: 0 0 2vh;
   }
   .slider-overlay p {
-    max-width: 360px;
+    max-width: 390px;
     font-size: 15px;
   }
   .slider-register, .slider-log-in{
@@ -338,11 +360,13 @@ footer{
     font-size: 15px;
     padding: 10px 25px;
   }
-  .slider-jackpot-box{
-    right: 12vw;
+  .slider-front-img {
+    max-width: 500px;
   }
-  .slider-overlay{
-    left: 12vw;
+}
+@media only screen and (max-width: 1200px){
+  .slider-front-img {
+    max-width: 450px;
   }
 }
 @media only screen and (max-width: 1100px){
@@ -532,6 +556,36 @@ footer{
   margin-left: 12px;
   opacity: .6;
 }
+@media only screen and (max-width: 1400px){
+  .slider-jackpot-box{
+    width: 400px;
+  }
+  .main-jackpotCards-box-splash .main-jackpotCards-box-img{
+    max-width: 290px!important;
+  }
+  .main-jackpotCards-box-heart .main-jackpotCards-box-img{
+    max-width: 270px!important;
+  }
+  .main-jackpotCards-box-diamond .main-jackpotCards-box-img{
+    max-width: 250px!important;
+  }
+  .main-jackpotCards-box-spade .main-jackpotCards-box-img{
+    max-width: 230px!important;
+  }
+  .main-mystery-box-mega .main-mystery-box-img{
+    max-width: 290px!important;
+  }
+  .custom-count-splash, .custom-count-heart, .custom-count-diamond, .custom-count-spade{
+    font-size: 28px;
+  }
+  .main-mystery-box-currency {
+    width: 10px!important;
+    margin-left: 10px;
+  }
+  .main-mystery-box, .main-jackpotCards-box{
+    height: 37vh;
+  }
+}
 /*-------------------------------Sub Mega and Jackpotcards--------------------------*/
 .sub-mystery-slider .main-mystery-box{
   height: auto;
@@ -597,6 +651,39 @@ footer{
 .sub-progressive-slider .slick-arrow.slick-next{
   right: 0;
 }
+@media only screen and (max-width: 1400px){
+  .sub-jackpotCards-slider .main-jackpotCards-box-splash .main-jackpotCards-box-img, .sub-mystery-slider .main-mystery-box-mega .main-mystery-box-img, .sub-online-slider .main-mystery-box-mega .main-mystery-box-img, .sub-progressive-slider .main-mystery-box-mega .main-mystery-box-img {
+    max-width: 270px!important;
+  }
+  .sub-mystery-slider .custom-count-mega, .sub-jackpotCards-slider .custom-count-splash, .sub-online-slider .custom-count-online, .sub-progressive-slider .custom-count-ra, .sub-progressive-slider .custom-count-versai, .sub-progressive-slider .custom-count-burning {
+    font-size: 26px;
+  }
+  .sub-mystery-slider .custom-count-mega {
+    top: 53px;
+  }
+  .sub-progressive-slider .custom-count-ra {
+    top: 28px;
+  }
+  .sub-progressive-slider .custom-count-burning {
+    top: 38px;
+  }
+  .sub-progressive-slider .custom-count-versai {
+    top: 22px;
+  }
+  .sub-online-slider .custom-count-online {
+    top: 25px;
+  }
+  .sub-mystery-slider .main-mystery-box-currency, .sub-jackpotCards-slider .main-mystery-box-currency, .sub-online-slider .main-mystery-box-currency, .sub-progressive-slider .main-mystery-box-currency {
+    width: 9px!important;
+  }
+  .sub-mystery-slider .main-mystery-box{
+    margin-top: 0;
+  }
+  .sub-progressive-slider .main-mystery-box {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
 /*----------------------------------------Online Casino Section---------------------------*/
 .online-casino-section{
   background: url(../../images/home-page/online-casino-back.jpg) center no-repeat;
@@ -649,10 +736,29 @@ footer{
     max-width: 860px;
   }
 }
+@media only screen and (min-width: 1500px){
+  .online-casino-box-container{
+    max-width: 860px;
+  }
+  .online-casino-section{
+    background: url(../../images/home-page/online-casino-back-middle.jpg) center no-repeat;
+  }
+}
 /*------------------------------------------SocialBox-------------------------------*/
 .social-box{
   background-image: linear-gradient(to top, #840000, #cc2027);
   padding: 40px 0;
+  position: relative;
+}
+#triangle{
+  width: 0;
+  height: 0;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 35px solid #cb1f27;
+  position: absolute;
+  top: -35px;
+  left: calc(50vw - 35px);
 }
 .social-icons{
   list-style: none;
@@ -685,7 +791,7 @@ footer{
   color: #cf000d;
 }
 .social-text li, .social-text h4, .social-text a{
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.69;
   text-align: left;
   color: #e6e6e6;
@@ -737,7 +843,7 @@ footer{
   width: 100%;
 }
 .partner-list img{
-  max-height: 73px;
+  max-height: 75px;
 }
 .copy-right p{
   color: #6d6d6d;

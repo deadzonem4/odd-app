@@ -7,6 +7,7 @@ const SocialBox = (props) => {
 
   return (
     <div className="social-box">
+    <div id="triangle"></div>
 	    <div className="container">
 	      <div className="social-box-content">
 	      	<div className="row">
