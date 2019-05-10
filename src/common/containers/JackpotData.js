@@ -1,6 +1,6 @@
 import React from 'react';
 
-class MainContainer extends React.Component {
+class JackpotData extends React.Component {
 
 	constructor(props) {
     super(props);
@@ -12,14 +12,12 @@ class MainContainer extends React.Component {
   }
   componentWillMount(){
     this.fetchData();
-  }
-
-  componentDidMount() {
     this.interval = setInterval(() => {
-        this.fetchData();
+      this.fetchData();
     }, 8000);
   }
  componentWillUnmount() {
+  console.log("asd");
     clearInterval(this.interval);
   }
   fetchData(){
@@ -55,4 +53,4 @@ class MainContainer extends React.Component {
 	}
 }
 
-export default MainContainer;
+export default JackpotData;

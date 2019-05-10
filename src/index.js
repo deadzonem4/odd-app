@@ -5,7 +5,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Switch } from 'react-router-dom';
 import Urls from './pages/Urls';
 import NewsPage from './pages/NewsPage';
-import Test from './pages/Test';
+import CasinosPage from './pages/CasinosPage';
 import ErrorPage from './pages/ErrorPage';
 import AppRoute from './layouts/AppRoute';
 import MainLayout from './layouts/MainLayout';
@@ -21,7 +21,7 @@ class App extends Component {
         <div>
           <Switch>
             <AppRoute layout={HomeLayout} exact path="/odd-app" component={NewsPage} />
-            <AppRoute layout={MainLayout} exact path="/odd-app/test" component={Test} />
+            <AppRoute layout={MainLayout} exact path="/odd-app/casinos" component={CasinosPage} />
             <AppRoute layout={MainLayout} exact path="/odd-app/urls" component={Urls} />
             <AppRoute layout={HomeLayout} exact path="/odd-app/news" component={NewsPage} />
             <AppRoute layout={MainLayout} component={ErrorPage} />

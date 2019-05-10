@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { NavLink as RRNavLink } from 'react-router-dom';
 import logo from "../../images/winbet-logo.png";
 import {
   Collapse,
@@ -7,13 +8,14 @@ import {
   NavbarToggler,
   Nav,
   NavItem,
+  NavLink
   } from 'reactstrap';
 
 const styles = {};
 
 styles.fill = {
-  background: '#23345c',
-  borderBottom: 'solid 1px #98a3b7'
+  background: '#222325',
+  borderBottom: 'solid 2px #141a1a',
 };
 
 
@@ -74,10 +76,10 @@ class MainMenu extends React.Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <Link className="nav-link" to="/odd-app">Начало</Link>
+                  <NavLink tag={RRNavLink} className="nav-link" activeClassName="active" to="/odd-app">Начало</NavLink>
                 </NavItem>
                 <NavItem>
-                  <Link className="nav-link" to="/odd-app">Игрални зали</Link>
+                  <NavLink tag={RRNavLink} className="nav-link" activeClassName="active" to="/odd-app/casinos">Игрални зали</NavLink>
                 </NavItem>
                 <NavItem>
                   <Link className="nav-link" to="/odd-app">Онлайн казино</Link>
