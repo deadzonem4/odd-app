@@ -287,7 +287,7 @@ footer{
   width: auto;
   height: 100%;
   top: 0px;
-  left: 13vw;
+  left: 12vw;
   color: #fff;
   display: flex;
   align-items: center;
@@ -348,7 +348,7 @@ footer{
 .slider-jackpot-box{
   position: absolute;
   top: 78px;
-  right: 13vw;
+  right: 12vw;
   height: 100vh;
   width: 440px;
 }
@@ -357,10 +357,10 @@ footer{
 }
 @media only screen and (min-width: 1800px){
   .slider-jackpot-box{
-    right: 18vw;
+    right: 17vw;
   }
   .slider-overlay{
-    left: 18vw;
+    left: 17vw;
   }
   .overlay-content{
     margin-bottom: 220px;
@@ -611,10 +611,10 @@ footer{
   .slider-jackpot-box{
     width: 400px;
   }
-  .main-jackpotCards-box-splash .main-jackpotCards-box-img{
+  .main-jackpotCards-box-splash .main-jackpotCards-box-img, .main-mystery-box-mega .main-mystery-box-img{
     max-width: 290px!important;
   }
-  .main-jackpotCards-box-heart .main-jackpotCards-box-img{
+  .main-jackpotCards-box-heart .main-jackpotCards-box-img, .main-mystery-box-super .main-mystery-box-img{
     max-width: 270px!important;
   }
   .main-jackpotCards-box-diamond .main-jackpotCards-box-img{
@@ -626,7 +626,7 @@ footer{
   .main-mystery-box-mega .main-mystery-box-img{
     max-width: 290px!important;
   }
-  .custom-count-splash, .custom-count-heart, .custom-count-diamond, .custom-count-spade{
+  .custom-count-splash, .custom-count-heart, .custom-count-diamond, .custom-count-spade, .custom-count-mega, .custom-count-super{
     font-size: 28px;
   }
   .main-mystery-box-currency {
@@ -641,10 +641,10 @@ footer{
   .slider-jackpot-box{
     width: 350px;
   }
-  .main-jackpotCards-box-splash .main-jackpotCards-box-img{
+  .main-jackpotCards-box-splash .main-jackpotCards-box-img, .main-mystery-box-mega .main-mystery-box-img{
     max-width: 260px!important;
   }
-  .main-jackpotCards-box-heart .main-jackpotCards-box-img{
+  .main-jackpotCards-box-heart .main-jackpotCards-box-img, .main-mystery-box-super .main-mystery-box-img{
     max-width: 240px!important;
   }
   .main-jackpotCards-box-diamond .main-jackpotCards-box-img{
@@ -656,7 +656,7 @@ footer{
   .main-mystery-box-mega .main-mystery-box-img{
     max-width: 260px!important;
   }
-  .custom-count-splash, .custom-count-heart, .custom-count-diamond, .custom-count-spade{
+  .custom-count-splash, .custom-count-heart, .custom-count-diamond, .custom-count-spade, .custom-count-mega, .custom-count-super{
     font-size: 24px;
   }
   .main-mystery-box-currency {
@@ -665,6 +665,9 @@ footer{
   }
   .main-mystery-box, .main-jackpotCards-box{
     height: 37vh;
+  }
+  .main-mystery-box-img-title{
+    max-width: 300px!important;
   }
 }
 /*-------------------------------Sub Mega and Jackpotcards--------------------------*/
@@ -761,8 +764,8 @@ footer{
     margin-top: 0;
   }
   .sub-progressive-slider .main-mystery-box {
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 6px;
+    margin-bottom: 6px;
   }
 }
 @media only screen and (max-width: 1250px){
@@ -794,8 +797,11 @@ footer{
     margin-top: 0;
   }
   .sub-progressive-slider .main-mystery-box {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+  .sub-online-slider .main-mystery-box{
+    margin-top: 8px;
   }
 }
 /*----------------------------------------Online Casino Section---------------------------*/
@@ -978,9 +984,9 @@ footer{
 }
 @media only screen and (min-width: 1500px){
   footer .container{
-      max-width: 1400px!important;
-      padding-left: 50px!important;
-      padding-right: 50px!important;
+    max-width: 1400px!important;
+    padding-left: 50px!important;
+    padding-right: 50px!important;
   }
 }
 /*---------------------------------------------------------Casino Page-----------------------------*/

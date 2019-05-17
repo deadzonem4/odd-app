@@ -8,26 +8,31 @@ import SliderBackground from "./SliderBackground";
 class MainSlider extends React.Component {
   render() {
     const slides = this.props.SliderBg.map((data, index) =>{
-      const sldierStyles = {};
-      sldierStyles.border = {
-        backgroundColor: data.border_color_slider
-      };
-      if(data.has_mystery === 0) {
+      if (data.is_deleted === 0) {
+        const sldierStyles = {};
+        sldierStyles.border = {
+          backgroundColor: data.border_color_slider
+        };
+        if(data.has_mystery === 0) {
+          return(
+            <div className="slide" key={index}>
+              <div className="slider-border" style={{...sldierStyles.border}}></div>
+              <SliderBackground  data={data}/>
+              <SliderOverlay data={data} title="front_file_title" description="front_file_description" button1="button_1_text" button2="button_2_text"/>
+            </div>
+          )
+        }
         return(
           <div className="slide" key={index}>
             <div className="slider-border" style={{...sldierStyles.border}}></div>
             <SliderBackground  data={data}/>
             <SliderOverlay data={data} title="front_file_title" description="front_file_description" button1="button_1_text" button2="button_2_text"/>
+            <JackpotBox data={data}/>
           </div>
         )
       }
       return(
-        <div className="slide" key={index}>
-          <div className="slider-border" style={{...sldierStyles.border}}></div>
-          <SliderBackground  data={data}/>
-          <SliderOverlay data={data} title="front_file_title" description="front_file_description" button1="button_1_text" button2="button_2_text"/>
-          <JackpotBox data={data}/>
-        </div>
+        null
       )
     });
 

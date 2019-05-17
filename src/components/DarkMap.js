@@ -1,14 +1,14 @@
 import React from "react";
 import '../common/styles/main.css';
-import SocialLinks from './SocialLinks.js'
-import SocialIcons from './SocialIcons.js'
+import { VectorMap } from "react-jvectormap"
 
-const VectorMap = (props) => {
+class DarkMap extends React.Component {
 
-  return (
-    <div className="vector-map">
+  render() {
+    return(
+      <div className="vector-map">
         <div style={{width: 500, height: 500}}>
-            <VectorMap map={'us_aea'}
+            <VectorMap map={'europe_mill'}
               backgroundColor="#3b96ce"
               ref="map"
               containerStyle={{
@@ -18,9 +18,10 @@ const VectorMap = (props) => {
               containerClassName="map"
             />
         </div>
-		</div>
-  );
+      </div>
+    )
+  }
 }
 
+export default DarkMap;
 
-export default VectorMap;

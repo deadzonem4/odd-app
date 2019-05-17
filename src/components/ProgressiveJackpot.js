@@ -34,14 +34,22 @@ class ProgressiveJackpot extends React.Component {
       slidesToScroll: 1,
       autoplay: true,
       pauseOnHover: false,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 4000,
       infinite: true,
       speed: 400,
       fade: false,
       cssEase: 'linear',
       dots: false,
       vertical: true,
-      verticalSwiping: true
+      verticalSwiping: true,
+      responsive: [
+        {
+          breakpoint: 1250,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
     };
 		return(
     	<div className="main-jackpot-slider">

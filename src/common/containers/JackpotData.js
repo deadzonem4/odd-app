@@ -17,7 +17,7 @@ class JackpotData extends React.Component {
     }, 8000);
   }
  componentWillUnmount() {
-  console.log("asd");
+  console.log("unmouted");
     clearInterval(this.interval);
   }
   fetchData(){
@@ -31,6 +31,7 @@ class JackpotData extends React.Component {
         api: api,
         loading: false
       });
+      console.log("requests numbers");
     })
     .catch(error => {
       console.log('error');

@@ -62,7 +62,7 @@ class MainSlider extends React.Component {
 	    	<div className="main-jackpot-slider">
 	        <Slider {...settings} className="full-width-slider">
 	          <div className="slide">
-	          	<div className="main-mystery-box" style={{...jackpotBox.border}}>
+	          	<div className="main-mystery-box top" style={{...jackpotBox.border}}>
 	          		<img className="main-mystery-box-img-title" src={mysteryLogo}  alt="winbet mystery"/>
 		          	<div className="main-mystery-box-mega">
 		          		<img className="main-mystery-box-img" src={megaJack}  alt="winbet mystery mega"/>
@@ -131,7 +131,7 @@ class MainSlider extends React.Component {
 	    	<div className="main-jackpot-slider">
 	        <Slider {...settings} className="full-width-slider">
 	          <div className="slide">
-	          	<div className="main-jackpotCards-box" style={{...jackpotBox.border}}>
+	          	<div className="main-jackpotCards-box top" style={{...jackpotBox.border}}>
 	          		<div className="main-jackpotCards-box-splash">
 		          		<img className="main-jackpotCards-box-img" src={splashJack}  alt="winbet jackpotCards"/>
 		          		<div className="main-jackpotCards-box-content">
